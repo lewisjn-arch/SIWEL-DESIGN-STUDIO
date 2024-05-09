@@ -578,7 +578,6 @@ blockquote cite:before {
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 0px;
-    display: block;
     width: 100%;
     position: relative;
     color: #b19777;
@@ -587,21 +586,31 @@ blockquote cite:before {
     display: none;
 }
 .nav-scroll .logo-wrapper .logo span {
-    display: block;
     font-family: 'Oswald', sans-serif;
     font-size: 13px;
     color: #575757;
     font-weight: 400;
     letter-spacing: 3px;
-    display: block;
     margin-top: 3px;
     line-height: 1.2em;
     text-transform: uppercase;
     margin-left: 5px;
     display: none !important;
 }
+
+.lettering-scroll{
+    display: none;
+    color: #B19777;
+    margin: 18px;
+    font-size: 22px;
+}
+
+.nav-scroll .logo-wrapper h2{
+    display: block;
+}
+
 .nav-scroll .logo-wrapper {
-    padding: 15px 70px 15px 150px;
+    padding: 15px 70px 15px 75px;
     background: #272727;
 }
 
@@ -631,7 +640,7 @@ blockquote cite:before {
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
     color: #777;
-    font-weight: 400;
+    font-weight: 800;
     letter-spacing: 4px;
     display: block;
     margin-top: 5px;
@@ -644,7 +653,7 @@ blockquote cite:before {
     text-align: center;
 }
 .logo-img {
-    width: 75px;
+    width: 100px;
     margin-bottom: 5px;
 }
 
