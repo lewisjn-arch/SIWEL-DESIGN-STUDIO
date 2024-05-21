@@ -783,27 +783,110 @@ blockquote cite:before {
     .nav-scroll {
         background: #272727;
     }
-    .logo-wrapper {
-        float: left;
-        padding: 15px;
-    }
-    .logo-wrapper .logo h2 {
-        display: none;
-    }
-    .nav-scroll .logo-wrapper {
-        padding: 15px;
-        background-color: transparent;
+    .nav-scroll .navbar-nav .logo {
+        padding: 15px 0;
+        color: #fff;
     }
     .nav-scroll .logo-img {
-        width: 75px;
+        width: 60px;
     }
-    .navbar .logo {
-        text-align: left;
-        margin-left: 0px;
+    .nav-scroll .logo {
+        width: 60px;
+    }
+    .nav-scroll .logo-img {
+        margin-bottom: 0px;
+    }
+    .nav-scroll .logo-wrapper .logo h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        width: 100%;
+        position: relative;
+        color: #b19777;
+        line-height: 1em;
+        letter-spacing: 5px;
+        display: none;
+    }
+    .nav-scroll .logo-wrapper .logo span {
+        font-family: 'Oswald', sans-serif;
+        font-size: 13px;
+        color: #575757;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-top: 3px;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        margin-left: 5px;
+        display: none !important;
+    }
+    
+    .lettering-scroll {
+        display: none;
+        color: #B19777;
+        margin: 8px;
+        font-size: 18px;
+    }
+    
+    .nav-scroll .logo-wrapper h2 {
+        display: block;
+    }
+    
+    .nav-scroll .logo-wrapper {
+        padding: 10px 70px 10px 15px;
+        background: #272727;
+    }
+    
+    .logo-wrapper {
+        float: left;
+        background: #272727;
+        padding: 10px 5px;
+    }
+    .logo-wrapper .logo h2 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        position: relative;
+        color: #b19777;
+        letter-spacing: 9px;
+        margin-bottom: 0;
+    }
+    .logo-wrapper .logo h2 i {
+        color: #777;
+        vertical-align: super;
+    }
+    .logo-wrapper .logo span {
+        display: block;
+        font-family: 'Oswald', sans-serif;
+        font-size: 12px;
+        color: #777;
+        font-weight: 800;
+        letter-spacing: 4px;
+        display: block;
+        margin-top: 5px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+    }
+    .logo {
+        padding: 0;
+        width: 130px;
+        text-align: center;
+    }
+    .logo-img {
+        width: 40px;
+        margin-bottom: 5px;
     }
 
-    .logo-img {
-        margin-bottom: 0px;
+    .logo-text-lg{
+        font-size: 22px !important;
+    }
+
+    .logo-text-sm{
+        width: 100%;
+        font-size: 9px !important;
+        font-weight: 500 !important;
+        margin: 0px;
     }
     .navbar button {
         margin-right: 0px;
