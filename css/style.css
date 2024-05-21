@@ -1195,6 +1195,10 @@ blockquote cite:before {
 
 
 /* =======  Video Background  ======= */
+.navbar-hidden {
+    display: none !important;
+  }
+  
 .video-fullscreen-wrap {
     position: fixed;
     top: 0;

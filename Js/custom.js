@@ -465,6 +465,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function openVideoModal() {
     document.getElementById('videoModal').style.display = 'flex';
     document.getElementById('localVideo').play();
+    document.querySelector('.navbar').classList.add('navbar-hidden');
 }
 
 function closeVideoModal() {
@@ -472,4 +473,6 @@ function closeVideoModal() {
     video.pause();
     video.currentTime = 0;
     document.getElementById('videoModal').style.display = 'none';
+    document.querySelector('.navbar').classList.remove('navbar-hidden');
 }
+
