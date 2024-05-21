@@ -1349,9 +1349,15 @@ blockquote cite:before {
 .services .item p {
     margin-bottom: 0;
 }
-.services .item img {
+.services-icon1 {
     width: 60px;
     margin-bottom: 20px;
+    margin-left: 36px;
+}
+
+.services-icon2{
+    width:120px;
+    margin: auto;
 }
 .services .item .numb {
     font-size: 40px;
@@ -2569,6 +2575,7 @@ hr.border-2 {
     padding: 60px 40px 40px 40px;
     border-radius: 0;
     margin-bottom: 30px;
+    height: 590px;
 }
 .pricing-card-bottom {
   padding-top: 20px;
@@ -2606,7 +2613,7 @@ hr.border-2 {
   color: #b19777;
 }
 .pricing-card-name {
-      line-height: 1;
+    line-height: 1;
     margin: 0;
     font-size: 16px;
     text-transform: uppercase;
@@ -2619,9 +2626,9 @@ hr.border-2 {
 .pricing-card-amount {
   margin: 0;
   line-height: 1;
-  font-size: 40px;
+  font-size: 18px;
   margin-bottom: 20px;
-    color: #fff;
+  color: #fff;
 }
 /* butn */
 .butn-pricing {
