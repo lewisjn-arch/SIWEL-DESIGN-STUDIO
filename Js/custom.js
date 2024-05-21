@@ -455,11 +455,27 @@ if ($(".accordion-box").length) {
 //navigation bar
 document.addEventListener('DOMContentLoaded', function () {
     const toggler = document.querySelector('.navbar-toggler');
+    const menuItems = document.querySelectorAll('.navbar-nav .nav-link');
 
     toggler.addEventListener('click', function () {
         this.classList.toggle('collapsed');
     });
+
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            if (toggler.classList.contains('collapsed')) {
+                toggler.classList.remove('collapsed');
+                // Close the menu if it is open
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                    toggle: false
+                });
+                bsCollapse.hide();
+            }
+        });
+    });
 });
+
 
 //video modal
 function openVideoModal() {

@@ -539,7 +539,7 @@ blockquote cite:before {
     width: 100%;
     background: transparent;
     z-index: 99;
-    padding-right: 10%;
+    padding-right: 5%;
     padding-left: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -577,7 +577,7 @@ blockquote cite:before {
 }
 .nav-scroll {
     background: #272727;
-    padding: 0 10% 0 0;
+    padding: 0 5% 0 0;
     position: fixed;
     top: -100px;
     left: 0;
@@ -601,7 +601,18 @@ blockquote cite:before {
     padding: 15px 0;
     color: #fff;
 }
+
+.logo-scroll{
+    display: none;
+}
+
 .nav-scroll .logo-img {
+    display: none;
+    width: 75px;
+}
+
+.nav-scroll .logo-scroll {
+    display: block;
     width: 75px;
 }
 .nav-scroll .logo {
@@ -618,7 +629,6 @@ blockquote cite:before {
     width: 100%;
     position: relative;
     color: #b19777;
-    line-height: 1.25em;
     letter-spacing: 5px;
     display: none;
 }
@@ -647,18 +657,18 @@ blockquote cite:before {
 }
 
 .nav-scroll .logo-wrapper {
-    padding: 15px 70px 15px 75px;
+    padding: 15px 5% 15px 30px;
     background: #272727;
 }
 
 .logo-wrapper {
     float: left;
     background: #272727;
-    padding: 30px 50px;
+    padding: 5px 5px;
 }
 .logo-wrapper .logo h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 45px;
+    font-size: 32px;
     font-weight: 400;
     display: block;
     width: 100%;
@@ -681,17 +691,16 @@ blockquote cite:before {
     letter-spacing: 4px;
     display: block;
     margin-top: 5px;
-    line-height: 1.5em;
     text-transform: uppercase;
 }
+
 .logo {
     padding: 0;
-    width: 150px;
+    width: 133px;
     text-align: center;
 }
 .logo-img {
     width: 100px;
-    margin-bottom: 5px;
 }
 
 .dropdown .nav-link i {
@@ -790,8 +799,15 @@ blockquote cite:before {
     .nav-scroll .logo-img {
         width: 60px;
     }
+
+    .nav-scroll .logo-scroll {
+        display: block;
+        width: 55px;
+    }
+
     .nav-scroll .logo {
         width: 60px;
+        height: 45px;
     }
     .nav-scroll .logo-img {
         margin-bottom: 0px;
@@ -833,14 +849,17 @@ blockquote cite:before {
     }
     
     .nav-scroll .logo-wrapper {
-        padding: 10px 70px 10px 15px;
+        height: 65px;
+        padding: 5px 10% 5px 15px;
         background: #272727;
     }
     
     .logo-wrapper {
         float: left;
         background: #272727;
-        padding: 10px 5px;
+        padding-left: 10px;
+        padding-top: 10px;
+        height: 85px;
     }
     .logo-wrapper .logo h2 {
         font-family: 'Oswald', sans-serif;
@@ -865,29 +884,18 @@ blockquote cite:before {
         letter-spacing: 4px;
         display: block;
         margin-top: 5px;
-        line-height: 1.5em;
         text-transform: uppercase;
     }
     .logo {
         padding: 0;
-        width: 130px;
+        width: 55px;
         text-align: center;
     }
     .logo-img {
-        width: 40px;
-        margin-bottom: 5px;
+        display: block;
+        width: 55px;
     }
 
-    .logo-text-lg{
-        font-size: 22px !important;
-    }
-
-    .logo-text-sm{
-        width: 100%;
-        font-size: 9px !important;
-        font-weight: 500 !important;
-        margin: 0px;
-    }
     .navbar button {
         margin-right: 0px;
         outline: none !important;
@@ -2329,6 +2337,7 @@ hr.border-2 {
     font-family: 'Oswald', sans-serif;
     color: #b19777;
     font-size: 17px;
+    text-align: center;
 }
 .main-footer .fotcont .fothead h6 {
     font-family: 'Didact Gothic', sans-serif;
@@ -2348,6 +2357,7 @@ hr.border-2 {
 .main-footer .fotcont p {
     margin-bottom: 0px;
     position: relative;
+    text-align: center;
 }
 /* sub footer */
 .main-footer .sub-footer {
@@ -3090,10 +3100,10 @@ hr.border-2 {
         margin-left: 0px;
     }
     .main-footer .sub-footer p.right {
-        text-align: left;
+        text-align: center;
     }
     .main-footer .abot .social-icon {
-        text-align: left;
+        text-align: center;
         margin-bottom: 15px;
     }
     .footer .logo {
@@ -3110,7 +3120,7 @@ hr.border-2 {
         padding: 60px 0;
     }
     .text-left {
-        text-align: left;
+        text-align: center;
     }
     .text-center {
         text-align: center;
