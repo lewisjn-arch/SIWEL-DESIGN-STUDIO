@@ -460,3 +460,16 @@ document.addEventListener('DOMContentLoaded', function () {
         this.classList.toggle('collapsed');
     });
 });
+
+//video modal
+function openVideoModal() {
+    document.getElementById('videoModal').style.display = 'flex';
+    document.getElementById('localVideo').play();
+}
+
+function closeVideoModal() {
+    var video = document.getElementById('localVideo');
+    video.pause();
+    video.currentTime = 0;
+    document.getElementById('videoModal').style.display = 'none';
+}

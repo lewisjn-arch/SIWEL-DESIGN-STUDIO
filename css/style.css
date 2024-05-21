@@ -1196,78 +1196,55 @@ blockquote cite:before {
 
 /* =======  Video Background  ======= */
 .video-fullscreen-wrap {
-  height: 100vh;
-  overflow: hidden;
-}
-.video-fullscreen-video {
-    height: 100%;
-}
-.video-fullscreen-wrap video {
-  width: 100vw;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-.video-fullscreen-wrap .video-fullscreen-inner {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: right;
-}
-.video-lauch-wrapper {
-  border: none;
-  background: none;
-  width: 100%;
-  padding: 0;
-}
-.video-fullscreen-wrap .video-fullscreen-inner h1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+  }
+  .video-fullscreen-video {
+      width: 80%;
+      height: auto;
+  }
+  .video-fullscreen-inner {
     position: relative;
-    margin-bottom: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 48px;
-    text-transform: uppercase;
-    line-height: 1.35em;
-    -webkit-animation-delay: .4s;
-    animation-delay: .4s;
-    color: #fff;
-    font-weight: 400;
-    letter-spacing: 15px;
-}
-.video-fullscreen-wrap .video-fullscreen-inner p {
-    font-size: 18px;
-    line-height: 1.75em;
-    margin-bottom: 0;
-    color: #fff;
-    -webkit-animation-delay: .6s;
-    animation-delay: .6s;
-    margin-right: 15px;
-}
-.video-fullscreen-wrap .video-fullscreen-inner .butn-light {
-    -webkit-animation-delay: .8s;
-    animation-delay: .8s;
-    margin-right: 15px;
-}
-.position-relative {
-  position: relative !important;
-}
-@media screen and (max-width: 767px) {
-    .video-fullscreen-wrap .video-fullscreen-inner h1 {
-        font-size: 30px;
-        margin-bottom: 15px;
-        letter-spacing: 10px;
-        line-height: 1.35em;
-    }
-    .video-fullscreen-wrap .video-fullscreen-inner p {
-    font-size: 15px;
-    margin-right: 10px;
-    }
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 767px) {
+      .video-fullscreen-video {
+          width: 100%;
+      }
+      .video-fullscreen-inner h1 {
+          font-size: 30px;
+          margin-bottom: 15px;
+          letter-spacing: 10px;
+          line-height: 1.35em;
+      }
+      .video-fullscreen-inner p {
+          font-size: 15px;
+          margin-right: 10px;
+      }
+  }
+  
 
 
 
@@ -1826,6 +1803,7 @@ button.mfp-arrow {
     transition: all .5s;
     -webkit-filter: brightness(100%);
     filter: brightness(100%);
+    height: 210px;
 }
 .bauen-blog .item .con {
     margin: -120px 20px 75px;
@@ -2836,239 +2814,6 @@ hr.border-2 {
     transition-duration: 0.8s;
     transition-timing-function: ease-in-out;
 }
-
-
-
-/* ======= Process 2 style ======= */
-.process2.item{
-    background-color: #323232;
-    padding: 30px 20px;
-    position: relative;
-    text-align: left;
-}
-.process2.item .icon {
-    margin-bottom: 15px;
-    font-size: 40px; 
-    color: #b19777;
-}
-.process2.item i.number {
-    position: absolute;
-    top: 110%;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    border: 1px solid #323232;
-    line-height: 39px;
-    text-align: center;
-    left: 22px;
-    font-style: normal;
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: #999;
-    -webkit-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-}
-.process2.item h3 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    letter-spacing: 5px;
-}
-.row > [class*='col-']:nth-child(even) .process2.item { margin-top: 65px; }
-.row > [class*='col-']:nth-child(even) .process2.item i.number { top: -60px;}
-.row > [class*='col-']:nth-of-type(odd) .process2.item:before {
-    top: 100%;
-    left: 50%;
-    border: solid transparent;
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-top-color: #323232;
-    border-width: 16px;
-    left: 25px;
-}
-.row > [class*='col-']:nth-of-type(even) .process2.item:before {
-    top: -30px;
-    left: 50%;
-    border: solid transparent;
-    content: "";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: transparent;
-    border-bottom-color: #323232;
-    border-width: 16px;
-    left: 25px;
-}
-.process2.item:hover i.number {
-    background-color: transparent;
-    border: 1px solid #b19777;
-}
-/* line animation */
-.process2.item .line {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    margin-bottom: 0px;
-}
-.process2.item .line:after {
-    position: absolute;
-    left: 0;
-    bottom: 10px;
-    width: 50px;
-    height: 1px;
-    background-color: rgba(255,255,255, 0.08);
-    content: '';
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-.process2.item:hover .line:after {
-    width: 100%;
-    background-color: rgba(255,255,255,0.2);
-    transition-property: all;
-    transition-duration: 0.8s;
-    transition-timing-function: ease-in-out;
-}
-
-
-
-/* ====== Coming Soon ======= */
-.comming{
-	min-height: 100vh;
-	height: auto;
-	position: relative;
-	background-blend-mode: overlay;
-	background: rgba(0,0,0,.6);
-	background-image: url("../img/slider/1.jpg");
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	color: #fff;
-}
-@media (max-width: 767px){
-	.comming{
-		min-height: 200vh;
-	}
-}
-.comming .item {
-    background-color: rgba(0,0,0, 0.3);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 30px 15px;
-    margin-bottom: 30px;
-}
-.comming h6 {
-    color: #b19777;
-    font-size: 13px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    letter-spacing: 5px;
-	line-height: 1.5em;
-}
-.comming h3 {
-    font-size: 48px;
-    line-height: 1.25em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 15px;
-}
-.comming h2 {
-    font-size: 48px;
-    line-height: 1.25em;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    position: relative;
-    text-transform: uppercase;
-    letter-spacing: 15px;
-    margin-bottom: 20px;
-	margin-top: 20px;
-}
-.comming p {
-	color: #fff;
-	font-size: 16px;
-}
-/* coming form */
-.comming form {
-  margin-top: 30px;
-  position: relative;
-}
-.comming form input {
-    width: 100%;
-    padding: 11px 50px 11px 11px;
-    background-color: transparent;
-    border: 1px solid #b19777;
-    border-radius: 0px;
-    color: #fff;
-    margin-bottom: 15px;
-	outline: none;
-}
-.comming form button {
-    background-color: #b19777;
-    padding: 8px 20px;
-    border-radius: 0px;
-    color: #fff;
-    border: 0;
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 300;
-    outline: none;
-}
-.comming form button:hover {
-  background-color: #323232;
-  color: #fff;
-	outline: none;
-}
-/* go home */
-.go-back{
-	margin-top: 45px;
-}
-.go-back a {
-	color: #fff;
-	display: inline-block;
-	font-size: 13px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-	letter-spacing: 5px;
-}
-.go-back a:hover {
-	color: #b19777;
-}
-.go-back a span{
-	transition: all .5s;
-}
-.go-back a span i {
-	color: #fff;
-	font-size: 14px;
-}
-.go-back a:hover span{
-	padding-right: 15px;
-}
-
-
 
 /* =======  Overlay Effect Bg image style  ======= */
 [data-overlay-dark],
